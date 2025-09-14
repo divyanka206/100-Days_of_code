@@ -1,6 +1,6 @@
 // code-1
 
-/*#include <stdio.h>
+#include <stdio.h>
 int main () {
     int a , b, sum;
     printf("enter two numbers");
@@ -8,7 +8,7 @@ int main () {
     sum=a+b;
     printf("sum is %d \n", sum);
     return 0;
-} */
+} 
 
 // code-2
 

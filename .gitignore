@@ -1,0 +1,8 @@
+# Ignore C binaries/executables
+*.out
+*.exe
+# Ignore all files with no extension (likely executables)
+*
+!*/
+!*.c
+!*.h

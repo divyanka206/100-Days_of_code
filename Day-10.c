@@ -27,7 +27,7 @@ int main() {
     
 
 // code-20
-/*#include <stdio.h>
+#include <stdio.h>
 int main () {
     int i;
     printf("enter number(1-7):");
@@ -56,4 +56,5 @@ int main () {
              printf("Sunday\n");
              break;
     }
-}*/
+}
+

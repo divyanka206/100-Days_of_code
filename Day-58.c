@@ -1,0 +1,19 @@
+//code-108
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int nums[n], i, j;
+    for(i = 0; i < n; i++) scanf("%d", &nums[i]);
+    for(i = 0; i < n; i++) {
+        int prod = 1;
+        for(j = 0; j < n; j++) {
+            if(i != j) prod *= nums[j];
+        }
+        printf("%d", prod);
+        if(i < n - 1) printf(", ");
+    }
+    return 0;
+}

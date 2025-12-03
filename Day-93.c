@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+struct Student {
+    char name[50];
+    int roll;
+    int marks;
+};
+
+int main() {
+    struct Student s[3];
+    int i;
+    int maxIndex = 0; // We start by assuming the first student (index 0) is the topper
+
+    printf("Enter details for 3 students (Name Roll Marks):\n");
+    for (i = 0; i < 3; i++) {
+        scanf("%s %d %d", s[i].name, &s[i].roll, &s[i].marks);
+    }
+
+    for (i = 1; i < 3; i++) {
+        if (s[i].marks > s[maxIndex].marks) {
+            maxIndex = i; // Update the index if we find a new higher mark
+        }
+    }
+
+    printf("Topper: %s (Marks: %d)\n", s[maxIndex].name, s[maxIndex].marks);
+
+    return 0;
+}
